@@ -1,0 +1,111 @@
+@import '/src/styles/variables.scss';
+
+.main{
+    display: flex;
+    margin-left: 258px;
+}
+
+.titlewrapper{
+    display: block;
+    margin-top: 56px;
+    height: 120px;
+    width: 556px;
+}
+
+.container1 {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 264px 360px;
+    row-gap: 70px;
+    column-gap: 30px;
+}
+
+.titlept1 {
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.titlept2{
+    color: $yellow-color;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.subtitle{
+    font-size: 18px;
+    font-weight: 400;
+    width: 554px;
+    height: 50px;
+    margin-top: 22px;
+}
+
+.text {
+    font-weight: $medium;
+    font-size: 16px;
+    margin-left: 10px;
+    align-self: center;
+}
+
+.container2 {
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.img1{
+    padding-top: 4px;
+    align-self: center;
+}
+
+.container4{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.container3{
+    display: flex;
+    flex-direction: column;
+}
+
+.img2{
+    // display: block;
+    align-self: center;
+}
+
+.text2{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: $medium;
+    text-align: center;
+    max-width: 264px;
+}
+
+//2nd block
+
+.section2{
+    background: linear-gradient(0.25turn, $yellow-color3, $yellow-color4, $yellow-color);
+    width: 100%;
+}
+
+.wrapper2{
+    padding: 20px 650px;
+    margin: 0 auto;
+}
+
+.container5{
+    margin: 0 258px;
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    gap: 20px 30px;
+}
+
+.title2{
+    text-align: center;
+    font-weight: $black;
+    font-size: 28px;
+    text-transform: uppercase;
+    padding: 52px 0 54px;
+}

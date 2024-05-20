@@ -1,0 +1,31 @@
+@import '/src/styles/variables.scss';
+
+.nav {
+    overflow: auto;
+
+    &List {
+        display: flex;
+
+        &Item {
+            margin: 40px 10px;
+
+            &>a {
+                color: $black-color;
+                font-family: $font-montserrat;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                letter-spacing: 0%;
+                line-height: normal;
+                text-transform: capitalize;
+                text-decoration: none;
+                transition: $transition;
+
+                &:hover {
+                    color: $hover-color;
+                }
+            }
+        }
+    }
+    
+}

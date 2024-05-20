@@ -1,0 +1,16 @@
+@import '/src/styles/variables.scss';
+
+.button {
+    border-radius: 30px;
+    border-color: transparent;
+    background: linear-gradient(0.25turn, $green-color2, $green-color);
+    color: $black-color;
+    font-weight: $bold;
+    padding: 5px 30px;
+    text-align: center;
+    font-size: 20px;
+
+    width: 360px;
+    height: 60px;
+    cursor: pointer;
+  }

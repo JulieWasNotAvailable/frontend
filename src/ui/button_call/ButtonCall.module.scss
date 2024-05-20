@@ -1,0 +1,27 @@
+@import '/src/styles/variables.scss';
+
+.wrapper {
+    max-width: 250px;
+  }
+
+.corners {
+    padding: 20px;
+    width: 195px;
+    height: 50px;
+  }
+
+.button {
+    border-radius: 30px;
+    border-style: solid;
+    border-color: $yellow-color;
+    background-color: $white-color;
+    color: $black-color;
+    font-weight: 700;
+    padding: 15px 26px;
+    text-align: center;
+    // text-decoration: none;
+    // display: inline-block;
+    font-size: 16px;
+    margin: 22px 0;
+    cursor: pointer;
+  }

@@ -1,0 +1,32 @@
+@import '/src/styles/variables.scss';
+
+.mainwrapper {
+    background-color: $yellow-color;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 278px 22px 258px;
+}
+
+.adresswrapper{
+    display: inline-flex;
+}
+
+.phonewrapper{
+    display: inline-flex;
+}
+
+.adress {
+    font-size: 14;
+    font-weight: 400;
+    margin-left: 10px;
+    color: $abs-black-color;
+}
+
+.phone {
+    font-size: 16;
+    font-weight: 600;
+    margin-left: 10px;
+    color: $abs-black-color;
+}

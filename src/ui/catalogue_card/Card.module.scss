@@ -1,0 +1,65 @@
+@import '/src/styles/variables.scss';
+
+.card{
+    background-color: $white-color;
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 420px;
+}
+
+.card:hover{
+    outline: 2px $green-color solid;
+    cursor: pointer;
+}
+
+.buttonAdd{
+    border-radius: 50%;
+    background-image: url("/buttonAdd.svg");
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    border: transparent;
+}
+
+.buttonAdd:hover{
+    cursor: pointer;
+    background-image: url("/buttonAddActive.svg");
+}
+
+.description{
+    margin: 26px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.name{
+    color: $black;
+    font-size: 16;
+    font-weight: $semibold;      
+    margin-bottom: 22px;  
+}
+
+.oldprice{
+    color: $gray2;
+    text-decoration: line-through;
+    font-size: 16;
+}
+
+.newprice{
+    color: $green-color;
+    font-size: 25;
+    font-weight: $semibold;    
+}
