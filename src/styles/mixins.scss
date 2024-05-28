@@ -1,0 +1,67 @@
+@import 'variables';
+
+@mixin h2-title-black{
+    text-align: center;
+    font-weight: $black;
+    color: $black-color;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+@mixin h2-title-black2{
+    text-align: left;
+    font-weight: $black;
+    color: $black-color;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+@mixin h2-title-yellow{
+    text-align: center;
+    font-weight: $black;
+    color: $yellow-color;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+@mixin h3-title{
+    font-weight: $black;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: $black-color;
+    text-align: left;
+    line-height: 35px;
+}
+
+@mixin h4-title{
+    font-weight: $bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+@mixin yellow-linear-background{
+    background: linear-gradient(0.25turn, $yellow-color3, $yellow-color4, $yellow-color);
+}
+
+@mixin disclaimer{
+    font-size: 10px;
+    font-weight: $regular;
+    line-height: 15px;
+}
+
+@mixin yellow-gradient-button{
+    border-radius: 30px;
+    border: none;
+    background: linear-gradient(0.25turn, $yellow-color2, $yellow-color);
+    color: $black-color;
+    font-weight: $bold;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+@mixin footer-text{
+    color: $white-color;
+    font-size: 16px;
+    font-weight: $regular;
+}

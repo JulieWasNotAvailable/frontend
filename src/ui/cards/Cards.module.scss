@@ -1,0 +1,56 @@
+@import '/src/styles/variables.scss';
+@import '/src/styles/mixins.scss';
+
+.card1 {
+    background-color: $white-color;
+    width: 360px;
+    height: 400px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2px; 
+    padding: 20px;  
+
+    &Title{
+        @include h4-title;
+        text-align: justify;
+        padding: 20px 0 20px 20px;
+    }
+
+    &Text{
+        font-size: 12px;
+        font-weight: $regular;
+        text-align: justify;
+    }
+
+    &Image{
+        float:inline-end;
+        padding: 20px;
+    }
+
+    &Button{
+            border-radius: 30px;
+            border: none;
+            background: linear-gradient(0.25turn, $yellow-color2, $yellow-color);
+            color: $black-color;
+            font-weight: $bold;
+            text-align: center;
+            box-shadow: 5px 8px 5px rgb(251, 216, 70, 0.1);
+            font-size: 16px;
+
+            padding: 12px 62px;
+            margin: 22px 0;
+        
+            width: 320;
+            height: 40;
+            cursor: pointer;
+    }
+}
+
+.card1:hover{
+    outline: 2px $yellow-color solid;
+
+    .card1Button{
+        outline: 1px $yellow-color solid;
+        background: $white-color;
+        padding: 12px 62px;
+    }
+}

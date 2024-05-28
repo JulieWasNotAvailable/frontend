@@ -8,10 +8,10 @@ export default function NavBar() {
         <nav className={styles.nav}>
             <div className={styles.navList}>
                 <div className={styles.navListItem}>
-                    <Link href="#">каталог товаров</Link>
+                    <Link href="/catalogue">каталог товаров</Link>
                 </div>
                 <div className={styles.navListItem}>
-                    <Link href="/about">кухонные модули</Link>
+                    <Link href="#">кухонные модули</Link>
                 </div>
                 <div className={styles.navListItem}>
                     <Link href="#">Декоры</Link>

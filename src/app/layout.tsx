@@ -2,8 +2,9 @@ import { Roboto } from 'next/font/google';
 import { Montserrat } from 'next/font/google';
 
 import '@/styles/index.scss';
-import Header from '../ui/header';
+import Header from '@/components/header';
 import SubHeader from '../ui/adress_number';
+import Footer from '@/components/footer';
 
 export const roboto = Roboto({
   subsets: ['cyrillic'],
@@ -24,6 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <SubHeader/>
       <Header/>
       <div>{children}</div>
+      <Footer/>
     </body>
     </html>
   );

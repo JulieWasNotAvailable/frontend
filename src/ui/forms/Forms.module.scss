@@ -1,0 +1,184 @@
+@import '/src/styles/variables.scss';
+@import '/src/styles/mixins.scss';
+
+.form1{
+    &Container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &Title{
+        @include h3-title;
+        width: 700px;
+        height: 60px;
+    }
+
+    &Subtitle{
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: $regular;
+        width: 700px;
+        height: 42px;
+    }
+
+    &Text{
+        width: 262px;
+    }
+
+    &Field{
+        width: 360px;
+        height: 60px;
+        padding-left: 16px;
+        border-radius: 30px;
+        border: $gray2 solid 1px;
+        color: $gray2;
+        font-size: 20px;
+        font-weight: $regular;        
+    }
+
+    &Fields{
+        padding-top: 40px;
+        display: grid;
+        width: 742px;
+        column-gap: 20px;
+        grid-template-columns: 360px 360px;
+    }
+}
+
+.containerTitle{
+    display: flex;
+    flex-direction: column;
+    height: 132px;
+    justify-content: space-between;
+}
+
+.container1{
+    display: flex;
+    justify-content: space-between;
+    width: 335px;
+    align-items: center;
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    height: 114px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.container3{
+    border-radius: 30px;
+    background-color: $gray-filling-color;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    width: 1140px;
+    height: 430px;
+    padding: 30px 0px 20px 26px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container3 > Image {
+    align-self: center;
+}
+
+
+.button {
+    @include yellow-gradient-button;
+
+    padding: 22px 60px;
+    box-shadow: 10px 10px 20px rgb(251, 216, 70, 0.4);
+    margin: 22px 0;
+    width: 360;
+    height: 66;
+    
+
+    &Disclaimer{
+        @include disclaimer;
+    }
+  }
+
+
+.form2{
+    display: flex;
+    flex-direction: row;
+    background-color: $black-color2;
+    padding-top: 30px;
+    justify-content: center;
+
+    &Container4{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &Container5{
+        width: 750px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &Container6{
+        width: 750px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    &Title{
+        @include h2-title-black;
+        color: $green-color;
+        margin-bottom: 30px;
+    }
+
+    &Title::after{
+        @include h2-title-black;
+        color: $white-color;
+        content: ' по любым вопросам';
+    }
+
+    &Container{
+
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+
+        &Field{
+            width: 360px;
+            height: 60px;
+            background-color: transparent;
+            padding-left: 16px;
+            border-radius: 20px;
+            border: $gray2 solid 1px;
+            color: $gray2;
+            font-size: 20px;
+            font-weight: $regular; 
+        }
+
+        &FieldBig{
+            width: 750px;
+            height: 114px;
+            background-color: transparent;
+            padding-left: 16px;
+            border-radius: 20px;
+            border: $gray2 solid 1px;
+            color: $gray2;
+            font-size: 20px;
+            font-weight: $regular; 
+            margin-bottom: 30px;
+        }
+    }
+
+    &Button{
+        @include yellow-gradient-button;
+        padding: 18px 52px;
+
+        &Disclaimer{
+            @include disclaimer;
+            color: $gray2;
+            width: 362px;
+            height: 42px;
+        }
+    }
+}

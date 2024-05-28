@@ -1,0 +1,87 @@
+
+@import '/src/styles/variables.scss';
+@import '/src/styles/mixins.scss';
+
+.footer{
+    background-color: $black-color;
+    padding-top: 28px;
+    padding-bottom: 24px;
+
+    &Container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 1140px;
+        margin: 0 auto;
+    }
+
+    &Container2{
+        display: flex;
+        column-gap: 1ch;
+    }
+
+    &Container3{
+        display: flex;
+        column-gap: 1ch;
+    }
+
+    &Container4{
+        margin-top: 42px;
+        display: flex;
+        align-items: center;
+        column-gap: 1ch;
+    }
+
+    &Container5{
+        display: flex;
+        column-gap: 14px;
+    }
+
+    &Column1{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &Column2{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &Column3{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &Column4{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+div.footerColumn1 p{
+    @include footer-text;
+    width: 252px;
+    height: 75px;
+    text-align: left;
+}
+div.footerColumn2 p{
+    @include footer-text;
+}
+div.footerColumn3 p{
+    @include footer-text;
+}
+div.footerColumn4 p{
+    @include footer-text;
+}
+
+div.footer span{
+    color: $gray4;
+    font-weight: $semibold;
+    font-size: 20px;
+}
+
+.invisible{
+    opacity: 0%;
+}

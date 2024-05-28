@@ -1,0 +1,86 @@
+@import '/src/styles/variables.scss';
+@import '/src/styles/mixins.scss';
+
+.main{
+    background-color: $white-color;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 94px 0px 0px 0px;
+    width: 1140px;
+}
+
+.part1{
+    &Title{
+        @include h2-title-black;
+        margin-bottom: 64px;
+    }
+
+    &Title::after{
+        @include h2-title-yellow;
+        content: ' материалы';
+    }
+
+    &Cards{
+        display: grid;
+        min-width: 60%;
+        grid-template-columns: repeat(auto-fill, 360px);
+        gap: 30px;
+    }
+}
+
+.part2{
+    margin-top: 100px;
+
+    &Title{
+        @include h2-title-black;
+        margin-bottom: 30px;
+    }
+
+    &Block1{
+        display: flex;
+        margin-bottom: 90px;
+
+        &Text{
+            font-size: 18px;
+            font-weight: $regular;
+            text-align: justify;
+            line-height: 30px;
+        }
+    }
+
+    &Block2{
+        display: flex;
+
+        &Text{
+            font-size: 18px;
+            font-weight: $regular;
+            text-align: justify;
+            line-height: 30px;
+        }
+    }
+
+    &Container{
+        display: flex;
+        flex-direction: column;
+        margin-right: 30px;
+    }
+
+    &Container2{
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+    }
+}
+
+div.part2Container > p.part2Title {
+    text-align: left;
+}
+
+div.part2Container2 > p.part2Title {
+    text-align: right;
+}
+
+div.part2Block1 > img {
+    align-self: center;
+}

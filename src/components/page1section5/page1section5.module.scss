@@ -1,0 +1,187 @@
+@import '/src/styles/variables.scss';
+@import '/src/styles/mixins.scss';
+
+.main{
+    @include yellow-linear-background;
+    padding-top: 60px;
+    padding-bottom: 64px;
+}
+
+.card1{
+    display: flex;
+    flex-direction: column;
+    background-color: $white-color;
+    width: 1140px; 
+    height: 160px;
+    margin: 0 auto 42px auto;
+    justify-content: center;
+
+    &Title{
+        display: flex;
+        line-height: 35px;
+
+        &Yellow::before{
+            @include h2-title-black;
+            content: 'Пройдите тест за 1 минуту и ';
+        }
+        &Yellow{
+            @include h2-title-yellow;
+        }
+        &Yellow::after{
+            @include h2-title-black;
+            content: ' вашей будущей кухни прямо сейчас';
+        }
+    }
+
+    &Subtitle{
+        display: flex;
+        justify-content: center;
+        width: 532px;
+        align-self: center;
+
+        &Text{
+            font-weight: $light;
+            font-size: 20px;
+            width: 495px;
+            height: 21px;
+            align-self: center;
+            margin-left: 5px;
+        }
+        
+    }
+}
+
+.card2{
+    background-color: $white-color;
+    width: 1140px; 
+    height: 560px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+
+    &Quizpic{
+        align-self: left;
+    }
+
+    &Score{
+       font-weight: 22px;
+       font-weight: $semibold;
+       position: relative;
+       top: 40px; 
+       left: 444px;
+    }
+
+    &Score::first-letter{
+        color: $yellow-color;
+    }
+
+    &Text{
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 270px;
+        text-transform: uppercase;
+        margin-right: 50px;
+
+        &Line{
+            text-align: left;
+            color: $yellow-color;
+            background-color: $yellow-color;
+            width: 62px;
+            border-radius: 30px;
+            height: 3px;
+        }
+
+        &Title{
+            font-weight: $extrabold;
+            font-size: 22px;
+        }
+
+        &Subtitle{
+            font-weight: $medium;
+            font-size: 18px;
+        }
+
+        &Subtitle::first-letter{
+            color: $green-color;
+        }
+    }
+
+    &Button{
+            border-radius: 30px;
+            border: none;
+            background: linear-gradient(0.25turn, $yellow-color2, $yellow-color);
+            color: $black-color;
+            font-weight: $medium;
+            font-size: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 4px rgb(251, 216, 70, 0.4);
+            
+            padding: 20px 30px;
+            margin: 50px 0 0;
+        
+            width: 264px;
+            height: 60px;
+            cursor: pointer;
+          }
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1140px;
+    height: 388px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &Title{
+        width: 360px;
+        height: 70px;
+        background-color: $white-color;
+
+        margin: 36px 0;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        @include h2-title-black;
+        align-self: center;
+    }
+
+    &Title::before{
+        color: $green-color;
+        content: 'Кухни Микс ';
+    }
+
+    &Cards{
+        display: flex;
+        justify-content: space-between;
+
+        &1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            border-radius: 10px;
+            background-color: $white-color;
+            text-align: center;
+            width: 264px;
+            height: 280px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+
+            text-transform: uppercase;
+
+            &Title{
+                font-size: 20px;
+                font-weight: $semibold;
+            }
+
+            &Text{
+                font-size: 14px;
+                font-weight: $regular;
+            }
+        }
+    }
+}
