@@ -2,6 +2,12 @@
 @import '/src/styles/variables.scss';
 @import '/src/styles/mixins.scss';
 
+.main{
+    @media(max-width: $mobile){
+        display: none;
+    }
+}
+
 .footer{
     background-color: $black-color;
     padding-top: 28px;

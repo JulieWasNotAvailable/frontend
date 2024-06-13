@@ -13,6 +13,9 @@
     width: 100%;
     justify-content: center;
     padding: 50px 0;
+    @media(max-width: $mobile){
+        padding: 42px 0;
+    }
 }
 
 .container5{
@@ -22,9 +25,27 @@
     margin: 0 auto;
     grid-template-columns: repeat(3, 360px);
     gap: 20px 30px;
+    @media(max-width: $mobile){
+    display: none;
+}
+}
+
+.container6{
+    display: none;
+    @media(max-width: $mobile){
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+        margin: 4vw;
+        align-items: center;
+    }
 }
 
 .title2{
     @include h2-title-black;
     padding-bottom: 42px;
+    @media(max-width: $mobile){
+        font-size: 24px;
+        padding: 0;
+    }
 }

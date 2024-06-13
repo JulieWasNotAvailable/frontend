@@ -7,6 +7,17 @@
     width: 360px;
     height: 420px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    @media(max-width: $mobile){
+        width: 345px;
+        height: 402px;
+    }
+}
+
+@media(max-width: $mobile){
+    .img{
+        width: 345px;
+        height: 402px;
+    }
 }
 
 .card:hover{
@@ -33,6 +44,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media(max-width: $mobile){
+        margin: 20px 15px;
+    }
 }
 
 .container{
@@ -50,17 +64,23 @@
     color: $black;
     font-size: 16;
     font-weight: $semibold;      
-    margin-bottom: 22px;  
+    margin-bottom: 22px;
+    @media(max-width: $mobile){
+        margin-bottom: 10px;
+    }
 }
 
 .oldprice{
     color: $gray2;
     text-decoration: line-through;
-    font-size: 16;
+    font-size: 16px;
 }
 
 .newprice{
     color: $green-color;
-    font-size: 25;
+    font-size: 25px;
     font-weight: $semibold;    
+    @media(max-width: $mobile){
+        font-size: 25px;
+    }
 }

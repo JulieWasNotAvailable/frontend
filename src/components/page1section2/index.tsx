@@ -15,6 +15,11 @@ export default function Page1Section2(){
             <Card/>
             <Card/>
         </div>
+        <div className={styles.container6}>
+            <Card/>
+            <Card/>
+            <Card/>
+        </div>
             <div className={styles.wrapper2}>
             <ButtonViewAll/>
             </div>

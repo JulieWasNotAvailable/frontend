@@ -5,7 +5,7 @@ import styles from './Footer.module.scss'
 
 export default function Footer () {
     return (
-        <div>
+        <div className={styles.main}>
         <Form2/>
             <div className={styles.footer}>
             <div className={styles.footerContainer}>

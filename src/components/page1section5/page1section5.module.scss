@@ -5,6 +5,9 @@
     @include yellow-linear-background;
     padding-top: 60px;
     padding-bottom: 64px;
+    @media(max-width: $mobile){
+        display: none;
+    }
 }
 
 .card1{

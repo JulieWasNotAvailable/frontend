@@ -7,6 +7,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('/factoryPictures/background.png');
+    @media(max-width: $mobile){
+        display: none;
+    }
 }
 
 .title{

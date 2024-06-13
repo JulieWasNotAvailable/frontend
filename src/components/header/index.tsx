@@ -12,6 +12,8 @@ export default function Header () {
                     <Link href="/" className={styles.logo}>
                             <Image width={165} height={68} src="/logo.svg" alt="logo"/>
                     </Link>
+
+                    <p className={styles.phoneMobile}>+7 (3466) 68-15-98</p>
                     
                     <div className={styles.navbar}><NavBar/></div>
                     

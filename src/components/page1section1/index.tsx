@@ -29,15 +29,15 @@ export default function Page1Section1 () {
                     </div>
 
                     <div className={styles.container2}>
-                    <Image className={styles.img1} src='/clock.svg' alt='clock icon' width={32} height={32}/>
-                    <p className={styles.text}>Соблюдение сроков изготовления. Если не выполним в срок – мы заплатим Вам неустойку.</p>
+                        <Image className={styles.img1} src='/clock.svg' alt='clock icon' width={32} height={32}/>
+                        <p className={styles.text}>Соблюдение сроков изготовления. <span className={styles.smalltext}>Если не выполним в срок – мы заплатим Вам неустойку.</span></p>
                     </div>
                 </div>
                 <div className={styles.container4}>
                     <ButtonCost name='Рассчитать стоимость'/>
                     <div className={styles.container3}>
                     <Image className={styles.img2} src='/gift.svg' alt='gift icon' width={25} height={32}/>
-                    <p className={styles.text2}>Пройдите тест из 5 вопросов и получите дизайн проект, и расчет стоимость кухни + гарантированный подарок при заказе кухни!</p>
+                    <p className={styles.text2}>Пройдите тест из 5 вопросов и получите дизайн проект, и расчет стоимость кухни <span className={styles.smalltext}>+ гарантированный подарок при заказе кухни!</span></p>
                     </div>
                 </div>
             </div>

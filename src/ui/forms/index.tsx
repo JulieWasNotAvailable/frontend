@@ -29,6 +29,31 @@ export default function Form1() {
     )
 }
 
+export function Form1Mobile() {
+    return(
+        <div className={styles.mobile}>
+            <p className={styles.mobileForm1Title}>Есть замер или эскиз кухни, или просто нашли фото кухни в интернете которая Вам нравится?</p>
+            <Image src='/medium-kitchen1.png' alt='kitchen image' width={256} height={196}/>
+            <p className={styles.mobileForm1Subtitle}>Отправьте его нам и мы посчитаем стоимость с учетом Ваших пожеланий!</p>
+            <form className={styles.mobileForm1Fields} action="/">
+                        
+                            <input className={styles.mobileForm1Field} type="text" id="fname" name="fname" placeholder='Ваше имя'/>
+                        
+                            <input className={styles.mobileForm1Field} type="tel" id="phone" name="phone" placeholder='+7(_ _ _) _ _ _-_ _ - _ _ '/>
+                        <div className={styles.mobileForm1Container1}>
+                            <Image src='/paperClip-icon.svg' alt='paper clip icon' width={50} height={50}/>
+                            <p className={styles.mobileForm1Text}>Вы можете приложить эскиз или фото</p>
+                        </div>    
+                        <div className={styles.container2}>
+                            <input className={styles.button} type="submit" id="submit" value="Рассчитать стоимость"/>
+                            <p className={styles.buttonDisclaimer}>Нажимая кнопку “Рассчитать стоимость”, вы соглашаетесь с условиями Политики конфиденциальности</p>
+                        </div>
+                    </form> 
+        </div>
+
+    )
+}
+
 export function Form2() {
     return (
         <div className={styles.form2}>

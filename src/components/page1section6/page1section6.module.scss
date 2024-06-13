@@ -8,6 +8,9 @@
     width: 100%;
     padding: 94px 0px 0px 0px;
     width: 1140px;
+    @media(max-width: $mobile){
+        display: none;
+    }
 }
 
 .part1{

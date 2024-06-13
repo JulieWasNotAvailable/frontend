@@ -13,4 +13,7 @@
     width: 360px;
     height: 60px;
     cursor: pointer;
+    @media(max-width: $mobile){
+      width: 345px;
+    }
   }
