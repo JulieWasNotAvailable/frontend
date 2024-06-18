@@ -11,8 +11,7 @@ import Page1Section5 from '@/components/page1section5';
 import Page1Section6 from '@/components/page1section6';
 import Page1Section7 from '@/components/page1section7';
 
-
-export default function Page() {
+export default async function Page() {
   return (
   <div>
     <Page1Section1/>

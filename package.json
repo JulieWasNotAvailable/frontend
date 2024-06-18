@@ -11,6 +11,7 @@
   "dependencies": {
     "@vercel/postgres": "^0.8.0",
     "clsx": "^2.1.1",
+    "isomorphic-unfetch": "^4.0.2",
     "modern-normalize": "^2.0.0",
     "next": "14.2.3",
     "react": "^18",
