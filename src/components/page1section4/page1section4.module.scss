@@ -94,10 +94,8 @@
     margin-bottom: 64px;
     align-self: center;
     display: grid;
-    // min-width: 60%;
-    max-width: 60%;
+    max-width: 1140px;
     grid-template-columns: repeat(auto-fill, 360px);
-    // grid-auto-rows: 260px;
     gap: 30px;
     justify-content: start;
     @media(max-width: $mobile){
@@ -150,11 +148,10 @@
     background-color: $yellow-color;
     width: 345px;
     height: 40px;
-    // border-radius: 30px;
+    margin: 0 auto;
     font-size: 16px;
     font-weight: $semibold;
     text-align: left;
-    // padding-top: 6px;
     padding-left: 16px;
 
     @media(max-width: $mobile){

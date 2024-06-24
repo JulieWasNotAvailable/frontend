@@ -1,4 +1,4 @@
-@import '/src/styles/variables.scss';
+;@import '/src/styles/variables.scss';
 
 
 .header {
@@ -11,6 +11,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @media(max-width: $mobile){
+        width: 100vw;
+        height: 70px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
 }
 
 .line{
@@ -31,22 +38,38 @@
     width: 165px;
     height: 68px;
     margin: 18px 0px;
+    &Mobile{
+        display: none;
+    }
+
+    @media(max-width: $mobile){
+        display: none;
+    }
 }
 
-.logo::after{
-    width: 200px;
-    display: none;
-    margin-left: 44px;
-    color: $black-color;
-    font-size: 14px;
-    font-weight: 14px;
-    content: '+7 (3466) 68-15-98';
+@media(max-width: $mobile){
+    .logoMobile{
+        display: block;
+    }
 }
+
+.phone{
+    display: none;
+    @media(max-width: $mobile){
+        display: block;
+        width: 130px;
+        color: $black-color;
+        font-size: 14px;
+        font-weight: $semibold;
+    }
+}
+
+
 
 @media(max-width: 768px){
-    .logo::after{
-        display: flex;
-    }
+    // .logo::after{
+    //     display: none;
+    // }
     .button_call{
         display: none;
     }

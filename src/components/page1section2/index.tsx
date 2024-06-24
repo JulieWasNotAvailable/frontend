@@ -27,15 +27,6 @@ export default async function Page1Section2(){
     for (let i in kitchens[3]) {
         imageUrlList.push(`http://127.0.0.1:7777/kitchens/db_images/${kitchens[3][i]}`)
     }
-    console.log(imageUrlList)
-    // const imageList = [
-    //     'http://127.0.0.1:7777/kitchens/db_images/brown.png', //вместо brown.png можно вставить динамический url
-    //     'http://127.0.0.1:7777/kitchens/db_images/white.png',
-    //     'http://127.0.0.1:7777/kitchens/db_images/raspberry.png',
-    //     'http://127.0.0.1:7777/kitchens/db_images/oak.png',
-    //     'http://127.0.0.1:7777/kitchens/db_images/orchid.png',
-    //     'http://127.0.0.1:7777/kitchens/db_images/raspberry.png',
-    // ]
     
     return(
     <div className={styles.section2}>

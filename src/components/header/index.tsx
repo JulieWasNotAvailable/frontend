@@ -13,11 +13,17 @@ export default function Header () {
                             <Image width={165} height={68} src="/logo.svg" alt="logo"/>
                     </Link>
 
+                    <Link href="/" className={styles.logoMobile}>
+                            <Image width={116} height={48} src="/logo.svg" alt="logo"/>
+                    </Link>
+
                     <p className={styles.phone}>+7 (3466) 68-15-98</p>
                     
                     <div className={styles.navbar}><NavBar/></div>
                     
                     <div className={styles.button_call}><ButtonCall name='Заказать звонок'/></div>
+
+                    <Image src='/burger.svg' alt='burger' width={30} height={24} />
 
             </div>
             <hr className={styles.line}/>

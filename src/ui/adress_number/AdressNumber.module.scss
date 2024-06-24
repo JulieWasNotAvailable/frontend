@@ -42,7 +42,7 @@
     color: $abs-black-color;
 }
 
-@media(max-width: 375px){
+@media(max-width: $mobile){
     .mainwrapper{
         display: none;
     }
