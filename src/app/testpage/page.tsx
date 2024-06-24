@@ -1,27 +1,30 @@
 'use client'
 
-import { useState } from "react"
-
-async function fetchBlob(url: string): Promise<Blob> {
-    const res = await fetch(url)
-    const blob = await res.blob()
-    return(blob)
-  }
-
-async function downloadImageAndSetSource(imageUrl: string){
-  const image = await fetchBlob(imageUrl);
-  console.log(image)
-  const url = URL.createObjectURL(image);
-  console.log(url);
+import { useEffect, useState } from "react";
+import Image from 'next/image';
+const url = 'http://127.0.0.1:7777/kitchens/db_images/1.jpg'
 
 export default function TestPage(){
+  const [img, setImg] = useState("");
 
-    downloadImageAndSetSource('http://127.0.0.1:7777/blewp.jpeg')
+  async function fetchImage(url: string) {
+    const res = await fetch(url);
+    const imageBlob = await res.blob();
+    console.log(imageBlob)
+    const imageObjectURL = URL.createObjectURL(imageBlob);
+    setImg(imageObjectURL)
+  }
 
-    return(
-        <div>
-            <button>do nothing</button>
-            {/* <img/> */}
-        </div>
-    )
+  useEffect(() => {
+    fetchImage(url);
+  }, []);
+  
+  console.log(img)
+
+  return(
+      <div>
+          <button>do nothing</button>
+          <Image src = {img} alt='foo' height={100} width={100}/>
+      </div>
+  )
 }

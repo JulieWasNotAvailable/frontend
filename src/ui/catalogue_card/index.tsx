@@ -1,19 +1,33 @@
+'use client'
+
+import { useEffect, useState } from 'react';
 import styles from './Card.module.scss'
 import Image from 'next/image'
 
-export class TextProps {
+export class CardProps {
     name?: string;
     newPrice?: number;
     oldPrice?: number;
+    url?: string;
 }
 
-const path = 'C:/Users/1/Desktop/backend/db_images/62f87108-269b-4bd9-a938-aa5e177f8649.png'
+export default function Card({name = 'Default', newPrice = 12000, oldPrice = 13000, url = 'http://127.0.0.1:7777/kitchens/db_images/brown.png'}: CardProps) {
+    const [img, setImg] = useState('');
 
-export default function Card({name = 'Default', newPrice = 12000, oldPrice = 13000}: TextProps) {
-    // name, newPrice, oldPrice = Array.from(Object.values(text));
+    async function fetchImage(url: string) {
+      const res = await fetch(url);
+      const imageBlob = await res.blob();
+      const imageObjectURL = URL.createObjectURL(imageBlob);
+      setImg(imageObjectURL)
+    }
+  
+    useEffect(() => {
+      fetchImage(url);
+    }, []);
+    
     return (
         <div className={styles.card}>
-            <Image className={styles.img} src='/catalogueCards/loftCard.png' alt='kitchen for card' width = {360} height={260}/>
+            <Image className={styles.img} src={img} alt='something for card' width = {360} height={260}/>
             <div className={styles.description}>
                 <p className={styles.name}>{name}</p>
                     <div className={styles.container}>
@@ -26,6 +40,5 @@ export default function Card({name = 'Default', newPrice = 12000, oldPrice = 130
                     </div>   
             </div>
         </div>
-
     )
 }
