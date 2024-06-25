@@ -27,12 +27,9 @@ function Burger() {
     const [open, setOpen] = useState(false);
   
     function handleClick() {
-      console.log('clicked')
       if (open === false){
-          console.log('inside open False')
           setOpen(true)
       } else {
-        console.log('inside Else condition')
         setOpen(false)
       }
       }

@@ -23,7 +23,7 @@ export default function Header () {
                     
                     <div className={styles.button_call}><ButtonCall name='Заказать звонок'/></div>
 
-                    <Image src='/burger.svg' alt='burger' width={30} height={24} />
+                    <Image className={styles.burger} src='/burger.svg' alt='burger' width={30} height={24} />
 
             </div>
             <hr className={styles.line}/>

@@ -64,7 +64,13 @@
     }
 }
 
+.burger{
+    display: none;
+    @media(max-width: $mobile){
+        display: block;
+    }
 
+}
 
 @media(max-width: 768px){
     // .logo::after{
