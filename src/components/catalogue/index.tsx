@@ -1,12 +1,34 @@
 import Card from '@/ui/catalogue_card'
 import styles from './Catalogue.module.scss'
 
+interface decoration{
+      id: number,
+      image: string;
+      colour: string;
+      material: string;
+      description: string;
+      createdDate: string;
+}
+
+interface kitchen_set{
+    id: number;
+    title: string;
+    image: string;
+    corpus_description: number;
+    facade_description: number;
+    length: number;
+    old_price: number;
+    new_price: number;
+    createdDate: string;
+    decoration: decoration;
+    decoration_2: decoration;
+}
 //по умолчанию сортировка на странице по цене
 
 async function getData() {
-    const res = await fetch('http://127.0.0.1:7777/kitchens')
+    const res = await fetch('http://127.0.0.1:5555/kitchens')
     const json = await res.json()
-    const sortedJson = await json.sort((a, b) => a.new_price - b.new_price);
+    const sortedJson = await json.sort((a:kitchen_set, b:kitchen_set) => a.new_price - b.new_price);
     let nameList = []
     let newPriceList = []
     let oldPriceList = []
@@ -15,7 +37,7 @@ async function getData() {
         nameList.push(sortedJson[i].title)
         newPriceList.push(sortedJson[i].new_price)
         oldPriceList.push(sortedJson[i].old_price)
-        imageUrlList.push(`http://127.0.0.1:7777/kitchens/db_images/${sortedJson[i].image}`)
+        imageUrlList.push(`http://127.0.0.1:5555/kitchens/db_images/${sortedJson[i].image}`)
     }
        
     return ([nameList, newPriceList, oldPriceList, imageUrlList])

@@ -9,7 +9,7 @@ import Image from "next/image";
 import { useState } from 'react';
   
 
-function Menu({open}) {
+function Menu({open}: {open: boolean}) {
     if (open === false) {
         return null;
     } else {
